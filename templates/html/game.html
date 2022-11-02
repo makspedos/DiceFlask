@@ -1,0 +1,28 @@
+{% extends 'html/template/base.html' %}
+{% block content %}
+    <div class="text-center">
+        <div class="myClass">
+        {% for message in get_flashed_messages() %}
+            <div class="text-center">
+                <div class="font-class">{{ message }}</div>
+            </div>
+        {% endfor %}
+        </div>
+        {% if game['round']==3 %}
+            <div class="container">
+                <a  href="{{ url_for('select')}}">
+                    <h2>See results</h2>
+                <a  href="{{ url_for('index')}}">
+                    <h2>Start again ?</h2>
+                </a>
+                </a>
+            </div>
+
+        {% else %}
+            <h1 class="drop">Drop the cubes</h1>
+            <a href="{{ url_for('select')}}">
+                <img src="{{ url_for('static', filename ='squares.jpg')}}">
+            </a>
+        {% endif %}
+    </div>
+{% endblock %}

@@ -1,0 +1,26 @@
+.myClass{
+    font-size: 40px;
+    color: blue;
+}
+a:link {
+    color: yellow;
+    font-size: 40px;
+    text-decoration: none;
+}
+h1.drop{
+    color: red;
+}
+h1{
+    font-size: 40px;
+    color: blue;
+}
+h2{
+    font-size: 35px;
+    color: yellow;
+}
+body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url("background_img.jpg");
+}
